@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity" android:background="@drawable/fondo">
+        tools:context=".MainActivity" android:background="@drawable/fondoapp">
 
     <EditText
             android:layout_width="0dp"
@@ -17,10 +17,12 @@
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="150dp"
             app:layout_constraintTop_toTopOf="parent" android:textAlignment="center" android:hint="Escribe una frase"/>
     <Button
-            android:text="Leer"
+            android:text="Leer frase"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="49dp"
             android:id="@+id/btnLeer" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
-            android:layout_marginTop="50dp" app:layout_constraintTop_toBottomOf="@+id/etLeer"/>
+            android:layout_marginTop="50dp" app:layout_constraintTop_toBottomOf="@+id/etLeer"
+            android:background="@drawable/botonxd" android:textStyle="bold" android:textSize="30sp"
+            android:textAllCaps="false"/>
 </android.support.constraint.ConstraintLayout>

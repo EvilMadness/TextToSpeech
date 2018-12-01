@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         btnLeer!!.setOnClickListener{
             val oracion = etLeer.text.toString()
             if(oracion == ""){
-                tts!!.speak("Ingrese texto", TextToSpeech.QUEUE_FLUSH, null, null)
-                etLeer.error = "Ingrese Texto"
+                tts!!.speak("Escriba una frase", TextToSpeech.QUEUE_FLUSH, null, null)
+                etLeer.error = "Escriba una frase"
             } else {
                 Toast.makeText(this, "Presionado", Toast.LENGTH_SHORT).show()
                 tts!!.speak(oracion, TextToSpeech.QUEUE_FLUSH, null, null)
